@@ -13,9 +13,6 @@ If you like this project, you can support development here:
 [![Ko-fi](https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/kofi-button.png)](https://ko-fi.com/tapion69)
 
 ---
-
-# 🇬🇧 ENGLISH VERSION
-
 ## 📊 Overview
 
 <img src="https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/economie.png" width="800"/>
