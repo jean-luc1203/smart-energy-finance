@@ -12,6 +12,15 @@ module.exports = {
 
     credentialSecret: false,
 
+    adminAuth: {
+        type: "credentials",
+        users: [{
+            username: "pi",
+            password: "$2a$12$fTPLydFlFsX7N6x8zqbnke7eIGdXDHWp4uzzqSdpOJClmFDEw1Ifu",
+            permissions: "*"
+        }]
+    },
+
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
     debugMaxLength: 1000,
