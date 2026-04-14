@@ -1,7 +1,3 @@
-Parfait 👍 voici ton **README complet corrigé avec ton vrai repo GitHub**, prêt à copier/coller directement (images compatibles Home Assistant ✅ + bouton Ko-fi fonctionnel).
-
----
-
 # ⚡ Smart Energy Finance
 
 ### Financial management of your electricity provider’s various kWh rates.
