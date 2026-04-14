@@ -1,23 +1,6 @@
-# ⚡ Smart Energy Finance
-
-### Financial management of your electricity provider’s various kWh rates.
+## 📊 Overview
 
 <img src="https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/compteur.png" width="900"/>
-
----
-
-## ❤️ Support the developer
-
-If you like this project, you can support development here:
-
-[![Ko-fi](https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/kofi-button.png)](https://ko-fi.com/tapion69)
-
-Premium access is available via Ko-fi.
-After support/purchase, you will receive your premium key.
-
----
-
-## 📊 Overview
 
 Smart Energy Finance is an advanced Home Assistant add-on designed to analyze the financial side of your energy system.
 
@@ -34,12 +17,23 @@ The add-on automatically creates Home Assistant entities and a ready-to-use dash
 
 ---
 
+## ❤️ Support the developer
+
+If you like this project, you can support development here:
+
+[![Ko-fi](https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/kofi-button.png)](https://ko-fi.com/tapion69)
+
+Premium access is available via Ko-fi.
+After support/purchase, you will receive your premium key.
+
+---
+
 ## ⚠️ Important recommendation
 
 For the best results, it is **strongly recommended** to use:
 
 * ✅ daily energy counters in **kWh**
-* ❌ not raw power sensors in **W**
+* ❌ NOT raw power sensors in **W**
 
 Why:
 
@@ -60,7 +54,7 @@ This module is compatible with:
 * solar panels
 * battery systems
 * Home Assistant energy sensors
-* custom energy entities from other add-ons or integrations
+* custom entities from other add-ons or integrations
 
 It is designed to remain flexible and can work with many different system types as long as the required Home Assistant entities are available.
 
@@ -75,7 +69,7 @@ The add-on automatically calculates and creates entities for:
 * yearly savings
 * solar production financial value
 * battery discharge financial value
-* real total cost with subscription included
+* real total cost including subscription
 * estimated cost without solar
 * import/export cost analysis
 * self-sufficiency and grid dependency ratios
@@ -233,6 +227,6 @@ Developed by Tapion69
 
 ## ❤️ Support
 
-If you enjoy this project and want to help future development:
+If you enjoy this project and want to support development:
 
 [https://ko-fi.com/tapion69](https://ko-fi.com/tapion69)
