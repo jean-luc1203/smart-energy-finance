@@ -1,3 +1,22 @@
+### **Changelog 0.1.6**
+
+**New**
+
+* Added `send_bip` option
+
+**Details**
+
+* Introduces a new optional `send_bip` setting in the add-on configuration
+* This option is used **only for anonymous usage tracking** (number of active installations)
+* No personal data or sensitive information is collected
+
+**Notes**
+
+* Feature is enabled by default
+* Can be disabled at any time via the add-on options
+
+---
+
 ## 🚀 Version 0.1.5
 
 ### 🎉 Initial Release
