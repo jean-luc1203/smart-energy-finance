@@ -1,3 +1,7 @@
+### **Changelog 0.1.7**
+
+* Bug fixe 
+
 ### **Changelog 0.1.6**
 
 **New**
