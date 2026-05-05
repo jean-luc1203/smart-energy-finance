@@ -1,3 +1,28 @@
+# 🚀 Smart Energy Finance — v0.2.0
+
+## ✨ Added
+
+* Manual correction of energy (kWh) and financial (€) data from Home Assistant
+* Ability to edit any past date
+* Automatic recalculation of day, month, and year totals
+
+## 📌 Date format
+
+* Required format: `YYYY-MM-DD` (e.g. 2026-05-04)
+
+## 🔒 Safety
+
+* Cannot modify current or future dates
+
+## 🧹 Misc
+
+* Added "Clear correction fields" button
+* Added last correction status sensor
+* Data persistence after restart
+
+---
+
+
 ### **Changelog 0.1.9**
 
 * Bug fixe to restart 
