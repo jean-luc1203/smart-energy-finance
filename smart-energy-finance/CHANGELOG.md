@@ -1,3 +1,7 @@
+### **Changelog 0.2.1**
+
+* Bug fixe
+
 # 🚀 Smart Energy Finance — v0.2.0
 
 ## ✨ Added
