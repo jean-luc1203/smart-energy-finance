@@ -1,3 +1,24 @@
+## Smart Energy Finance 0.2.2
+
+### Added
+
+* New detailed economy history charts
+* Solar and battery savings are now separated in statistics graphs
+* Daily, monthly and yearly charts now display total savings directly on bars
+
+### Improved
+
+* Better readability of economy statistics dashboard
+* Improved tooltip display on history graphs
+* Better visualization of battery contribution to savings
+
+### Fixed
+
+* Various history chart display improvements
+* Improved stability of manual correction system
+* Better persistence handling after restart/update
+
+
 ### **Changelog 0.2.1**
 
 * Bug fixe
