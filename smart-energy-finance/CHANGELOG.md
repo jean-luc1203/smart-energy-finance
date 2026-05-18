@@ -1,3 +1,23 @@
+## Changelog 0.2.3
+
+### Improvements
+
+* Added enhanced manual correction tools for historical finance and energy data
+* Added ability to reset a selected historical day
+* Added full data reset option with confirmation protection
+* Added automatic backup creation before manual modifications
+* Added restore option to recover a selected day from backup
+* Improved safety of manual correction handling to better protect historical data
+* Improved persistence and synchronization of manual correction actions
+* Enhanced reliability of history adjustments for day/month/year data
+
+### Fixes
+
+* Fixed manual correction history recalculation issues
+* Fixed edge cases where historical values could become inconsistent after manual actions
+* Fixed synchronization issues between runtime memory and persistent storage
+
+
 ## Smart Energy Finance 0.2.2
 
 ### Added
