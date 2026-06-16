@@ -1,3 +1,39 @@
+# Smart Energy Finance v0.2.5
+
+## 🖥️ New Premium HTML Dashboard
+
+![Smart Energy Finance Dashboard](https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/news%20dashboard.png)
+
+### 🚀 New Features
+- Brand-new Premium HTML Dashboard.
+- Fully responsive design for desktop, tablet and mobile.
+- Interactive donut charts and historical graphs.
+- Automatic FR / EN language support.
+- Automatic dashboard generation.
+
+### 🔄 Dashboard Modes
+New dashboard generation options:
+- `lovelace` → Lovelace dashboard only
+- `html` → HTML dashboard only
+- `both` → Lovelace + HTML dashboards
+- `disabled` → No dashboard generation
+
+### 🔗 Smart Energy Premium Integration
+- Automatic integration with existing Premium dashboards.
+- Compatible with JK-BMS Premium and Smart Voltronic Premium.
+- Shared multi-module dashboard support.
+
+### 🔧 Improvements
+- Improved dashboard generation and updates.
+- Better multi-dashboard management.
+- Reduced Premium-related log verbosity.
+- Various UI and performance optimizations.
+
+### 🐞 Fixes
+- Fixed dashboard integration issues.
+- Fixed several HTML dashboard generation problems.
+- Improved dashboard stability and navigation.
+
 ## Changelog 0.2.3
 
 ### Improvements
