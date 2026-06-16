@@ -1,8 +1,10 @@
+# Smart Energy Finance
+
 ## 📊 Overview
 
 <img src="https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/compteur.png" width="900"/>
 
-➡️ French documentation:
+➡️ French documentation:  
 https://github.com/jean-luc1203/smart-energy-finance/blob/main/smart-energy-finance/README_FR.md
 
 Smart Energy Finance is an advanced Home Assistant add-on designed to analyze the financial side of your energy system.
@@ -16,7 +18,44 @@ It helps you understand:
 * self-sufficiency level
 * savings over time
 
-The add-on automatically creates Home Assistant entities and a ready-to-use dashboard to display daily, monthly, and yearly energy financial analytics.
+The add-on automatically creates Home Assistant entities and dashboards to display daily, monthly and yearly financial analytics.
+
+---
+
+# 🖥️ New Premium HTML Dashboard (v0.2.5)
+
+<img src="https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/news%20dashboard.png" width="900"/>
+
+Smart Energy Finance now includes a brand-new Premium HTML Dashboard.
+
+Designed for desktop, tablet and mobile devices, it provides a modern interface focused on energy savings, profitability analysis and financial monitoring.
+
+### Features
+
+* Modern responsive HTML interface
+* Daily, monthly and yearly savings dashboards
+* Interactive financial donut charts
+* Advanced historical charts
+* Detailed energy cost analysis
+* Real-time financial indicators
+* Automatic FR / EN language support
+* Automatic dashboard generation
+* Premium Smart Energy ecosystem integration
+
+### Smart Energy Premium Ecosystem
+
+The new dashboard supports automatic integration with other SmartPhoton Premium modules.
+
+When several Premium modules are installed:
+
+* JK-BMS
+* Smart Voltronic
+* Smart Energy Finance
+* Future SmartPhoton modules
+
+They are automatically merged into a single unified dashboard with shared navigation.
+
+If Smart Energy Finance is installed alone, a standalone dashboard is automatically created.
 
 ---
 
@@ -26,26 +65,27 @@ If you like this project, you can support development here:
 
 [![Ko-fi](https://raw.githubusercontent.com/jean-luc1203/smart-energy-finance/main/smart-energy-finance/docs/images/kofi-button.png)](https://ko-fi.com/tapion69)
 
-Premium access is available via Ko-fi.
+Premium access is available via Ko-fi.  
 After support/purchase, you will receive your premium key.
 
 ---
 
 ## ⚠️ Important recommendation
 
-For the best results, it is **strongly recommended** to use:
+For the best results, it is strongly recommended to use:
 
-* ✅ daily energy counters in **kWh**
-* ❌ NOT raw power sensors in **W**
+* ✅ Daily energy counters in kWh
+* ❌ Raw power sensors in W
 
-Why:
+Why?
 
-* more accurate calculations
-* better long-term stability
-* reliable daily / monthly / yearly history
-* fewer errors and drift over time
+* More accurate calculations
+* Better long-term stability
+* Reliable daily, monthly and yearly history
+* Reduced calculation drift
+* Better financial precision
 
-Power sensors can work in some cases, but energy counters remain the best and most reliable solution.
+Power sensors can work in some cases, but energy counters remain the most reliable solution.
 
 ---
 
@@ -53,29 +93,33 @@ Power sensors can work in some cases, but energy counters remain the best and mo
 
 This module is compatible with:
 
-* inverters
-* solar panels
-* battery systems
-* Home Assistant energy sensors
-* custom entities from other add-ons or integrations
+* Solar systems
+* Battery storage systems
+* Home Assistant Energy Dashboard
+* Smart Voltronic
+* JK-BMS
+* Custom Home Assistant entities
+* MQTT energy integrations
 
-It is designed to remain flexible and can work with many different system types as long as the required Home Assistant entities are available.
+The add-on is designed to remain flexible and work with many different system architectures.
 
 ---
 
-## 💰 What Smart Energy Finance does
+## 💰 What Smart Energy Finance calculates
 
-The add-on automatically calculates and creates entities for:
+The add-on automatically creates financial entities for:
 
-* daily savings
-* monthly savings
-* yearly savings
-* solar production financial value
-* battery discharge financial value
-* real total cost including subscription
-* estimated cost without solar
-* import/export cost analysis
-* self-sufficiency and grid dependency ratios
+* Daily savings
+* Monthly savings
+* Yearly savings
+* Solar production value
+* Battery discharge value
+* Grid import costs
+* Grid export revenue
+* Real cost including subscription
+* Estimated cost without solar
+* Self-sufficiency ratio
+* Grid dependency ratio
 
 ---
 
@@ -85,12 +129,12 @@ The add-on automatically calculates and creates entities for:
 
 The Energy dashboard includes:
 
-* solar / battery / grid distribution
-* real-time energy mix
-* self-sufficiency analysis
-* grid dependency overview
-* energy cost context
-* premium analytics cards
+* Solar / Battery / Grid distribution
+* Real-time energy mix
+* Self-sufficiency analysis
+* Grid dependency overview
+* Energy cost context
+* Premium analytics cards
 
 ---
 
@@ -100,11 +144,12 @@ The Energy dashboard includes:
 
 The Battery dashboard includes:
 
-* battery charge / discharge analysis
-* battery usage financial value
-* monthly and yearly battery statistics
-* premium donut charts
-* detailed battery savings view
+* Battery charge analysis
+* Battery discharge analysis
+* Battery profitability tracking
+* Monthly and yearly battery statistics
+* Premium donut charts
+* Detailed savings analytics
 
 ---
 
@@ -114,45 +159,51 @@ The Battery dashboard includes:
 
 The Economy dashboard includes:
 
-* daily financial distribution
-* monthly savings view
-* yearly savings view
-* solar value analysis
-* battery savings impact
-* subscription cost effect
-* premium donut charts and history view
+* Daily financial distribution
+* Monthly savings tracking
+* Yearly savings tracking
+* Solar value analysis
+* Battery contribution analysis
+* Subscription impact analysis
+* Historical charts
+* Premium financial analytics
 
 ---
 
 ## 📈 Premium Features
 
-Smart Energy Finance includes a **Premium mode** that unlocks advanced features.
+Premium mode unlocks advanced capabilities:
 
-### Premium includes:
+### Included with Premium
 
-* advanced premium dashboards
-* daily / monthly / yearly history
-* battery financial analytics
-* advanced donut charts
-* long-term statistics
-* richer Home Assistant views
-* premium insights for energy optimization
+* Premium Lovelace dashboards
+* Premium HTML dashboard
+* Interactive financial charts
+* Daily / Monthly / Yearly history
+* Advanced battery analytics
+* Long-term statistics
+* Historical archives
+* Financial performance monitoring
+* Smart Energy Premium integration
+* Automatic dashboard generation
 
 ---
 
 ## 💳 How to get Premium
 
-Premium is available through Ko-fi:
+Premium access is available through Ko-fi:
 
-[https://ko-fi.com/tapion69](https://ko-fi.com/tapion69)
+https://ko-fi.com/tapion69
 
-After support/purchase, you receive your premium key.
-This key can then be added to the add-on configuration to unlock premium features.
+After support/purchase, you will receive a Premium Key.
+
+Simply add the key to the add-on configuration to unlock Premium features.
 
 ---
 
 ## ⚙️ Example configuration
 
+```yaml
 mqtt_host: core-mosquitto
 mqtt_port: 1883
 mqtt_user: user
@@ -165,6 +216,8 @@ monthly_subscription_price: 12.5
 
 dashboard_language: en
 dashboard_custom_cards_installed: true
+premium_key: YOUR_KEY
+```
 
 ---
 
@@ -189,27 +242,30 @@ dashboard_custom_cards_installed: true
 * sensor.smart_energy_finance_battery_month_savings
 * sensor.smart_energy_finance_battery_year_savings
 
-### History
+### History Archive
 
 * sensor.smart_energy_finance_history_archive
 
-  * daily
-  * monthly
-  * yearly
+Contains:
+
+* Daily history
+* Monthly history
+* Yearly history
 
 ---
 
-## 🚀 Automatic dashboard creation
+## 🚀 Automatic Dashboard Generation
 
-The add-on automatically creates a premium dashboard inside Home Assistant.
+The add-on automatically generates:
 
-This means:
+* Premium Home Assistant dashboards
+* Premium HTML dashboards
+* FR / EN interfaces based on add-on configuration
+* Shared Smart Energy Premium dashboards when multiple modules are installed
 
-* no manual Lovelace setup required
-* automatic entity usage
-* FR / EN dashboard support
-* works with or without custom cards
-* optimized for premium visual presentation
+No manual Lovelace configuration is required.
+
+The system automatically detects other SmartPhoton Premium modules and integrates them into a unified dashboard experience.
 
 ---
 
@@ -217,8 +273,10 @@ This means:
 
 * Node-RED
 * MQTT Discovery
-* ApexCharts
 * Home Assistant Supervisor API
+* HTML5
+* JavaScript
+* ApexCharts
 
 ---
 
@@ -230,6 +288,6 @@ Developed by Tapion69
 
 ## ❤️ Support
 
-If you enjoy this project and want to support development:
+If you enjoy this project and would like to support future development:
 
-[https://ko-fi.com/tapion69](https://ko-fi.com/tapion69)
+https://ko-fi.com/tapion69
