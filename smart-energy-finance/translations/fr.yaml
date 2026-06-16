@@ -1,183 +1,313 @@
 configuration:
   general_section:
     name: "────────── GÉNÉRAL ──────────"
+
   currency:
     name: "Devise"
+    description: "Devise utilisée pour tous les calculs financiers et l'affichage des dashboards."
 
   contract_section:
     name: "────────── CONTRAT ──────────"
+
   contract_type:
     name: "Type de contrat"
+    description: "Choisissez le type de tarification utilisé par votre fournisseur d'électricité."
     options:
       fixed: "Fixe"
       time_based: "Plages horaires"
       tempo: "Tempo"
+
   monthly_subscription_price:
     name: "Prix abonnement mensuel"
+    description: "Montant mensuel de votre abonnement électrique, hors consommation."
 
   fixed_import_price:
     name: "Prix import fixe par kWh"
+    description: "Prix payé pour chaque kWh acheté au réseau."
+
   fixed_export_price:
     name: "Prix export fixe par kWh"
+    description: "Prix reçu pour chaque kWh injecté ou revendu au réseau."
 
   tariff_1_name:
     name: "Nom tarif 1"
+    description: "Nom de la première plage tarifaire, par exemple HP ou Peak."
+
   tariff_1_price:
     name: "Prix tarif 1"
+    description: "Prix du kWh pour la première plage tarifaire."
+
   tariff_1_start:
     name: "Début tarif 1"
+    description: "Heure de début du tarif 1 au format HH:MM."
+
   tariff_1_end:
     name: "Fin tarif 1"
+    description: "Heure de fin du tarif 1 au format HH:MM."
 
   tariff_2_name:
     name: "Nom tarif 2"
+    description: "Nom de la deuxième plage tarifaire, par exemple HC ou Off-peak."
+
   tariff_2_price:
     name: "Prix tarif 2"
+    description: "Prix du kWh pour la deuxième plage tarifaire."
+
   tariff_2_start:
     name: "Début tarif 2"
+    description: "Heure de début du tarif 2 au format HH:MM."
+
   tariff_2_end:
     name: "Fin tarif 2"
+    description: "Heure de fin du tarif 2 au format HH:MM."
 
   tariff_3_name:
     name: "Nom tarif 3"
+    description: "Nom optionnel d'une troisième plage tarifaire."
+
   tariff_3_price:
     name: "Prix tarif 3"
+    description: "Prix du kWh pour la troisième plage tarifaire."
+
   tariff_3_start:
     name: "Début tarif 3"
+    description: "Heure de début du tarif 3 au format HH:MM."
+
   tariff_3_end:
     name: "Fin tarif 3"
+    description: "Heure de fin du tarif 3 au format HH:MM."
 
   tariff_4_name:
     name: "Nom tarif 4"
+    description: "Nom optionnel d'une quatrième plage tarifaire."
+
   tariff_4_price:
     name: "Prix tarif 4"
+    description: "Prix du kWh pour la quatrième plage tarifaire."
+
   tariff_4_start:
     name: "Début tarif 4"
+    description: "Heure de début du tarif 4 au format HH:MM."
+
   tariff_4_end:
     name: "Fin tarif 4"
+    description: "Heure de fin du tarif 4 au format HH:MM."
 
   tempo_section:
     name: "────────── TEMPO ──────────"
+
   tempo_color_entity:
     name: "Entité couleur Tempo"
+    description: "Entité Home Assistant indiquant la couleur Tempo actuelle : bleu, blanc ou rouge."
+
   tempo_blue_hc_price:
     name: "Tempo bleu HC"
+    description: "Prix du kWh en jour bleu pendant les heures creuses."
+
   tempo_blue_hp_price:
     name: "Tempo bleu HP"
+    description: "Prix du kWh en jour bleu pendant les heures pleines."
+
   tempo_white_hc_price:
     name: "Tempo blanc HC"
+    description: "Prix du kWh en jour blanc pendant les heures creuses."
+
   tempo_white_hp_price:
     name: "Tempo blanc HP"
+    description: "Prix du kWh en jour blanc pendant les heures pleines."
+
   tempo_red_hc_price:
     name: "Tempo rouge HC"
+    description: "Prix du kWh en jour rouge pendant les heures creuses."
+
   tempo_red_hp_price:
     name: "Tempo rouge HP"
+    description: "Prix du kWh en jour rouge pendant les heures pleines."
+
   tempo_hc_slot_1_start:
     name: "Début plage HC Tempo 1"
+    description: "Heure de début de la première plage heures creuses Tempo."
+
   tempo_hc_slot_1_end:
     name: "Fin plage HC Tempo 1"
+    description: "Heure de fin de la première plage heures creuses Tempo."
+
   tempo_hc_slot_2_start:
     name: "Début plage HC Tempo 2"
+    description: "Heure de début optionnelle de la deuxième plage heures creuses Tempo."
+
   tempo_hc_slot_2_end:
     name: "Fin plage HC Tempo 2"
+    description: "Heure de fin optionnelle de la deuxième plage heures creuses Tempo."
 
   solar_section:
     name: "────────── SOLAIRE ──────────"
+
   solar_enabled:
     name: "Activer le solaire"
+    description: "Active le calcul de la production solaire et de sa valeur financière."
+
   solar_input_mode:
     name: "Mode entrée solaire"
+    description: "Le mode énergie en kWh est recommandé. Le mode puissance en W est disponible pour compatibilité."
     options:
       energy: "Énergie"
       power: "Puissance"
+
   solar_energy_entity:
     name: "Entité énergie solaire"
+    description: "Capteur Home Assistant de production solaire cumulée en kWh."
+
   solar_power_entity:
     name: "Entité puissance solaire"
+    description: "Capteur Home Assistant de production solaire instantanée en W."
 
   load_section:
     name: "────────── CONSOMMATION ──────────"
+
   load_enabled:
     name: "Activer la consommation"
+    description: "Active le calcul de la consommation de la maison."
+
   load_input_mode:
     name: "Mode entrée consommation"
+    description: "Le mode énergie en kWh est recommandé pour des calculs financiers fiables."
     options:
       energy: "Énergie"
       power: "Puissance"
+
   load_energy_entity:
     name: "Entité énergie consommation"
+    description: "Capteur Home Assistant de consommation cumulée de la maison en kWh."
+
   load_power_entity:
     name: "Entité puissance consommation"
+    description: "Capteur Home Assistant de consommation instantanée de la maison en W."
 
   battery_section:
     name: "────────── BATTERIE ──────────"
+
   battery_enabled:
     name: "Activer la batterie"
+    description: "Active le calcul des économies liées à la charge et décharge batterie."
+
   battery_input_mode:
     name: "Mode entrée batterie"
+    description: "Le mode énergie en kWh est recommandé. Le mode puissance en W est moins précis."
     options:
       energy: "Énergie"
       power: "Puissance"
+
   battery_charge_energy_entity:
     name: "Entité énergie charge batterie"
+    description: "Capteur Home Assistant représentant l'énergie cumulée utilisée pour charger la batterie en kWh."
+
   battery_discharge_energy_entity:
     name: "Entité énergie décharge batterie"
+    description: "Capteur Home Assistant représentant l'énergie cumulée restituée par la batterie en kWh."
+
   battery_charge_power_entity:
     name: "Entité puissance charge batterie"
+    description: "Capteur Home Assistant représentant la puissance instantanée de charge batterie en W."
+
   battery_discharge_power_entity:
     name: "Entité puissance décharge batterie"
+    description: "Capteur Home Assistant représentant la puissance instantanée de décharge batterie en W."
+
   battery_capacity_ah:
     name: "Capacité batterie en Ah"
+    description: "Capacité totale du parc batterie en ampères-heures."
+
   battery_total_capacity_kwh:
     name: "Capacité totale batterie en kWh"
+    description: "Capacité totale utilisable du parc batterie en kWh."
 
   grid_section:
     name: "────────── RÉSEAU / IMPORT EXPORT ──────────"
+
   grid_enabled:
     name: "Activer le réseau"
+    description: "Active le calcul des imports et exports réseau."
+
   grid_input_mode:
     name: "Mode entrée réseau"
+    description: "Le mode énergie en kWh est recommandé pour éviter les écarts de calcul."
     options:
       energy: "Énergie"
       power: "Puissance"
+
   grid_import_energy_entity:
     name: "Entité énergie import réseau"
+    description: "Capteur Home Assistant de l'énergie totale achetée au réseau en kWh."
+
   grid_export_energy_entity:
     name: "Entité énergie export réseau"
+    description: "Capteur Home Assistant de l'énergie totale injectée ou revendue au réseau en kWh."
+
   grid_import_power_entity:
     name: "Entité puissance import réseau"
+    description: "Capteur Home Assistant de puissance instantanée importée du réseau en W."
+
   grid_export_power_entity:
     name: "Entité puissance export réseau"
+    description: "Capteur Home Assistant de puissance instantanée exportée vers le réseau en W."
 
   mqtt_section:
     name: "────────── MQTT ──────────"
+
   mqtt_host:
     name: "Hôte MQTT"
+    description: "Adresse du broker MQTT. Pour Mosquitto officiel Home Assistant, utilisez généralement core-mosquitto."
+
   mqtt_port:
     name: "Port MQTT"
+    description: "Port du broker MQTT. La valeur standard est 1883."
+
   mqtt_user:
     name: "Utilisateur MQTT"
+    description: "Nom d'utilisateur MQTT si votre broker demande une authentification."
+
   mqtt_pass:
     name: "Mot de passe MQTT"
+    description: "Mot de passe MQTT associé à l'utilisateur."
 
   premium_section:
     name: "────────── PREMIUM ──────────"
+
   premium_key:
     name: "Clé Premium"
+    description: "Clé Premium permettant de déverrouiller les dashboards avancés, historiques et statistiques."
 
   dashboard_section:
     name: "────────── DASHBOARD ──────────"
+
   dashboard_custom_cards_installed:
     name: "Cartes personnalisées installées"
+    description: "Activez cette option si ApexCharts et Card-Mod sont installés dans Home Assistant."
+
   dashboard_language:
     name: "Langue du dashboard"
+    description: "Langue utilisée pour générer les dashboards Lovelace et HTML."
     options:
       en: "Anglais"
       fr: "Français"
 
+  premium_dashboard_output:
+    name: "Type de dashboard généré"
+    description: "Choisissez quel type de dashboard Premium doit être généré automatiquement."
+    options:
+      lovelace: "Lovelace uniquement"
+      html: "HTML uniquement"
+      both: "Lovelace + HTML"
+      disabled: "Désactivé"
+
   timezone_section:
     name: "────────── FUSEAU HORAIRE ──────────"
+
   timezone_mode:
     name: "Fuseau horaire"
+    description: "Fuseau horaire utilisé pour les calculs journaliers, mensuels et annuels."
+
   timezone_custom:
     name: "Fuseau horaire personnalisé"
+    description: "Utilisé uniquement si le mode fuseau horaire est réglé sur CUSTOM."
