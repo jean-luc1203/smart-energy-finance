@@ -1,183 +1,313 @@
 configuration:
   general_section:
     name: "────────── GENERAL ──────────"
+
   currency:
     name: "Currency"
+    description: "Currency used for all financial calculations and dashboard displays."
 
   contract_section:
     name: "────────── CONTRACT ──────────"
+
   contract_type:
     name: "Contract type"
+    description: "Select the electricity pricing model used by your energy provider."
     options:
       fixed: "Fixed"
-      time_based: "Time based"
+      time_based: "Time-based"
       tempo: "Tempo"
+
   monthly_subscription_price:
-    name: "Monthly subscription price"
+    name: "Monthly subscription cost"
+    description: "Monthly electricity subscription cost excluding energy consumption."
 
   fixed_import_price:
     name: "Fixed import price per kWh"
+    description: "Price paid for each kWh imported from the grid."
+
   fixed_export_price:
     name: "Fixed export price per kWh"
+    description: "Price received for each kWh exported or sold back to the grid."
 
   tariff_1_name:
     name: "Tariff 1 name"
+    description: "Name of the first tariff period, for example Peak."
+
   tariff_1_price:
     name: "Tariff 1 price"
+    description: "Price per kWh for the first tariff period."
+
   tariff_1_start:
     name: "Tariff 1 start"
+    description: "Start time of tariff period 1 in HH:MM format."
+
   tariff_1_end:
     name: "Tariff 1 end"
+    description: "End time of tariff period 1 in HH:MM format."
 
   tariff_2_name:
     name: "Tariff 2 name"
+    description: "Name of the second tariff period, for example Off-Peak."
+
   tariff_2_price:
     name: "Tariff 2 price"
+    description: "Price per kWh for the second tariff period."
+
   tariff_2_start:
     name: "Tariff 2 start"
+    description: "Start time of tariff period 2 in HH:MM format."
+
   tariff_2_end:
     name: "Tariff 2 end"
+    description: "End time of tariff period 2 in HH:MM format."
 
   tariff_3_name:
     name: "Tariff 3 name"
+    description: "Optional third tariff period name."
+
   tariff_3_price:
     name: "Tariff 3 price"
+    description: "Price per kWh for the third tariff period."
+
   tariff_3_start:
     name: "Tariff 3 start"
+    description: "Start time of tariff period 3 in HH:MM format."
+
   tariff_3_end:
     name: "Tariff 3 end"
+    description: "End time of tariff period 3 in HH:MM format."
 
   tariff_4_name:
     name: "Tariff 4 name"
+    description: "Optional fourth tariff period name."
+
   tariff_4_price:
     name: "Tariff 4 price"
+    description: "Price per kWh for the fourth tariff period."
+
   tariff_4_start:
     name: "Tariff 4 start"
+    description: "Start time of tariff period 4 in HH:MM format."
+
   tariff_4_end:
     name: "Tariff 4 end"
+    description: "End time of tariff period 4 in HH:MM format."
 
   tempo_section:
     name: "────────── TEMPO ──────────"
+
   tempo_color_entity:
     name: "Tempo color entity"
+    description: "Home Assistant entity indicating the current Tempo color: blue, white or red."
+
   tempo_blue_hc_price:
     name: "Tempo blue off-peak"
+    description: "kWh price during blue days and off-peak hours."
+
   tempo_blue_hp_price:
     name: "Tempo blue peak"
+    description: "kWh price during blue days and peak hours."
+
   tempo_white_hc_price:
     name: "Tempo white off-peak"
+    description: "kWh price during white days and off-peak hours."
+
   tempo_white_hp_price:
     name: "Tempo white peak"
+    description: "kWh price during white days and peak hours."
+
   tempo_red_hc_price:
     name: "Tempo red off-peak"
+    description: "kWh price during red days and off-peak hours."
+
   tempo_red_hp_price:
     name: "Tempo red peak"
+    description: "kWh price during red days and peak hours."
+
   tempo_hc_slot_1_start:
     name: "Tempo off-peak slot 1 start"
+    description: "Start time of the first Tempo off-peak period."
+
   tempo_hc_slot_1_end:
     name: "Tempo off-peak slot 1 end"
+    description: "End time of the first Tempo off-peak period."
+
   tempo_hc_slot_2_start:
     name: "Tempo off-peak slot 2 start"
+    description: "Optional start time of the second Tempo off-peak period."
+
   tempo_hc_slot_2_end:
     name: "Tempo off-peak slot 2 end"
+    description: "Optional end time of the second Tempo off-peak period."
 
   solar_section:
     name: "────────── SOLAR ──────────"
+
   solar_enabled:
     name: "Enable solar"
+    description: "Enable solar production and financial value calculations."
+
   solar_input_mode:
     name: "Solar input mode"
+    description: "Energy mode (kWh) is recommended. Power mode (W) is provided for compatibility."
     options:
       energy: "Energy"
       power: "Power"
+
   solar_energy_entity:
     name: "Solar energy entity"
+    description: "Home Assistant entity representing cumulative solar production in kWh."
+
   solar_power_entity:
     name: "Solar power entity"
+    description: "Home Assistant entity representing instantaneous solar production in W."
 
   load_section:
     name: "────────── LOAD ──────────"
+
   load_enabled:
     name: "Enable load"
+    description: "Enable home consumption calculations."
+
   load_input_mode:
     name: "Load input mode"
+    description: "Energy mode (kWh) is recommended for accurate financial calculations."
     options:
       energy: "Energy"
       power: "Power"
+
   load_energy_entity:
     name: "Load energy entity"
+    description: "Home Assistant entity representing cumulative home consumption in kWh."
+
   load_power_entity:
     name: "Load power entity"
+    description: "Home Assistant entity representing instantaneous home consumption in W."
 
   battery_section:
     name: "────────── BATTERY ──────────"
+
   battery_enabled:
     name: "Enable battery"
+    description: "Enable battery charge/discharge savings calculations."
+
   battery_input_mode:
     name: "Battery input mode"
+    description: "Energy mode (kWh) is recommended. Power mode (W) is less accurate."
     options:
       energy: "Energy"
       power: "Power"
+
   battery_charge_energy_entity:
     name: "Battery charge energy entity"
+    description: "Home Assistant entity representing cumulative battery charging energy in kWh."
+
   battery_discharge_energy_entity:
     name: "Battery discharge energy entity"
+    description: "Home Assistant entity representing cumulative battery discharge energy in kWh."
+
   battery_charge_power_entity:
     name: "Battery charge power entity"
+    description: "Home Assistant entity representing instantaneous battery charging power in W."
+
   battery_discharge_power_entity:
     name: "Battery discharge power entity"
+    description: "Home Assistant entity representing instantaneous battery discharge power in W."
+
   battery_capacity_ah:
     name: "Battery capacity (Ah)"
+    description: "Total battery bank capacity in amp-hours."
+
   battery_total_capacity_kwh:
     name: "Battery total capacity (kWh)"
+    description: "Total usable battery bank capacity in kWh."
 
   grid_section:
     name: "────────── GRID / IMPORT EXPORT ──────────"
+
   grid_enabled:
     name: "Enable grid"
+    description: "Enable grid import and export calculations."
+
   grid_input_mode:
     name: "Grid input mode"
+    description: "Energy mode (kWh) is recommended for the most reliable calculations."
     options:
       energy: "Energy"
       power: "Power"
+
   grid_import_energy_entity:
     name: "Grid import energy entity"
+    description: "Home Assistant entity representing total energy imported from the grid in kWh."
+
   grid_export_energy_entity:
     name: "Grid export energy entity"
+    description: "Home Assistant entity representing total energy exported to the grid in kWh."
+
   grid_import_power_entity:
     name: "Grid import power entity"
+    description: "Home Assistant entity representing instantaneous imported power in W."
+
   grid_export_power_entity:
     name: "Grid export power entity"
+    description: "Home Assistant entity representing instantaneous exported power in W."
 
   mqtt_section:
     name: "────────── MQTT ──────────"
+
   mqtt_host:
     name: "MQTT host"
+    description: "MQTT broker address. For the official Home Assistant Mosquitto add-on, use core-mosquitto."
+
   mqtt_port:
     name: "MQTT port"
+    description: "MQTT broker port. The standard value is 1883."
+
   mqtt_user:
-    name: "MQTT user"
+    name: "MQTT username"
+    description: "MQTT username if authentication is required."
+
   mqtt_pass:
     name: "MQTT password"
+    description: "MQTT password associated with the username."
 
   premium_section:
     name: "────────── PREMIUM ──────────"
+
   premium_key:
     name: "Premium key"
+    description: "Unlocks Premium dashboards, advanced history, statistics and Smart Energy Premium integration."
 
   dashboard_section:
     name: "────────── DASHBOARD ──────────"
+
   dashboard_custom_cards_installed:
     name: "Custom cards installed"
+    description: "Enable if ApexCharts and Card-Mod are already installed in Home Assistant."
+
   dashboard_language:
     name: "Dashboard language"
+    description: "Language used when generating Lovelace and HTML dashboards."
     options:
       en: "English"
       fr: "French"
 
+  premium_dashboard_output:
+    name: "Dashboard output mode"
+    description: "Choose which Premium dashboard type should be generated automatically."
+    options:
+      lovelace: "Lovelace only"
+      html: "HTML only"
+      both: "Lovelace + HTML"
+      disabled: "Disabled"
+
   timezone_section:
     name: "────────── TIMEZONE ──────────"
+
   timezone_mode:
     name: "Timezone"
+    description: "Timezone used for daily, monthly and yearly calculations."
+
   timezone_custom:
     name: "Custom timezone"
+    description: "Used only when timezone mode is set to CUSTOM."
