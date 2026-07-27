@@ -1,3 +1,7 @@
+### **Changelog 0.2.8**
+
+* Bug fixe to history 
+
 # Smart Energy Finance v0.2.5
 
 ## 🖥️ New Premium HTML Dashboard
