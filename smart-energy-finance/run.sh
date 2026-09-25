@@ -95,6 +95,7 @@ normalize_timezone() {
     sign="${offset:0:1}"
     hours="${offset:1}"
     hours="$(printf '%d' "$hours" 2>/dev/null || echo "")"
+
     if [ -n "$hours" ] && [ "$hours" -ge 0 ] && [ "$hours" -le 14 ]; then
       if [ "$sign" = "+" ]; then
         echo "Etc/GMT-$hours"
@@ -109,6 +110,7 @@ normalize_timezone() {
     sign="${upper:0:1}"
     hours="${upper:1}"
     hours="$(printf '%d' "$hours" 2>/dev/null || echo "")"
+
     if [ -n "$hours" ] && [ "$hours" -ge 0 ] && [ "$hours" -le 14 ]; then
       if [ "$sign" = "+" ]; then
         echo "Etc/GMT-$hours"
@@ -124,6 +126,7 @@ normalize_timezone() {
 
 validate_timezone_or_fallback() {
   local tz="$1"
+
   if timezone_exists "$tz"; then
     echo "$tz"
   else
@@ -157,6 +160,7 @@ EOF
   fi
 
   logi "Installing runtime dependency: ws"
+
   (
     cd "$RUNTIME_NODE_DIR"
     npm install --no-save --omit=dev --no-audit --no-fund ws@8.18.0
@@ -170,7 +174,10 @@ EOF
   fi
 }
 
+# ============================================================
 # PREMIUM
+# ============================================================
+
 if [ ! -f "$INSTANCE_FILE" ]; then
   cat /proc/sys/kernel/random/uuid > "$INSTANCE_FILE"
   logi "Premium: nouvel install_id généré"
@@ -186,19 +193,32 @@ export SMART_ENERGY_FINANCE_PREMIUM_KEY
 export SMART_VOLTRONIC_INSTANCE_ID="$SMART_ENERGY_FINANCE_INSTALL_ID"
 export SMART_VOLTRONIC_PREMIUM_KEY="$SMART_ENERGY_FINANCE_PREMIUM_KEY"
 
+# ============================================================
 # DASHBOARD
+# ============================================================
+
 DASHBOARD_CUSTOM_CARDS_INSTALLED="$(bool_or_false '.dashboard_custom_cards_installed')"
 DASHBOARD_LANGUAGE="$(jq -r '.dashboard_language // "en"' "$OPTS")"
+
 export DASHBOARD_CUSTOM_CARDS_INSTALLED DASHBOARD_LANGUAGE
 
+# ============================================================
 # OPTIONS
+# ============================================================
+
 SEND_BIP="$(jq -r '(.send_bip // true) | if . == true then "true" else "false" end' "$OPTS")"
 export SEND_BIP
 
+# ============================================================
 # GENERAL
+# ============================================================
+
 CURRENCY="$(jq -r '.currency // "EUR"' "$OPTS")"
 
+# ============================================================
 # CONTRACT
+# ============================================================
+
 CONTRACT_TYPE="$(jq -r '.contract_type // "fixed"' "$OPTS")"
 MONTHLY_SUBSCRIPTION_PRICE="$(jq_num_or '.monthly_subscription_price' 0)"
 FIXED_IMPORT_PRICE="$(jq_num_or '.fixed_import_price' 0)"
@@ -224,7 +244,10 @@ TARIFF_4_PRICE="$(jq_num_or '.tariff_4_price' 0)"
 TARIFF_4_START="$(jq -r '.tariff_4_start // ""' "$OPTS")"
 TARIFF_4_END="$(jq -r '.tariff_4_end // ""' "$OPTS")"
 
+# ============================================================
 # TEMPO
+# ============================================================
+
 TEMPO_COLOR_ENTITY="$(jq -r '.tempo_color_entity // ""' "$OPTS")"
 TEMPO_BLUE_HC_PRICE="$(jq_num_or '.tempo_blue_hc_price' 0)"
 TEMPO_BLUE_HP_PRICE="$(jq_num_or '.tempo_blue_hp_price' 0)"
@@ -237,7 +260,10 @@ TEMPO_HC_SLOT_1_END="$(jq -r '.tempo_hc_slot_1_end // "06:00"' "$OPTS")"
 TEMPO_HC_SLOT_2_START="$(jq -r '.tempo_hc_slot_2_start // ""' "$OPTS")"
 TEMPO_HC_SLOT_2_END="$(jq -r '.tempo_hc_slot_2_end // ""' "$OPTS")"
 
+# ============================================================
 # INPUTS
+# ============================================================
+
 SOLAR_ENABLED="$(bool_or_false '.solar_enabled')"
 SOLAR_INPUT_MODE="$(jq -r '.solar_input_mode // "energy"' "$OPTS")"
 SOLAR_ENERGY_ENTITY="$(jq -r '.solar_energy_entity // ""' "$OPTS")"
@@ -264,7 +290,10 @@ GRID_EXPORT_ENERGY_ENTITY="$(jq -r '.grid_export_energy_entity // ""' "$OPTS")"
 GRID_IMPORT_POWER_ENTITY="$(jq -r '.grid_import_power_entity // ""' "$OPTS")"
 GRID_EXPORT_POWER_ENTITY="$(jq -r '.grid_export_power_entity // ""' "$OPTS")"
 
+# ============================================================
 # MQTT
+# ============================================================
+
 MQTT_HOST="$(jq_str_or '.mqtt_host' '')"
 MQTT_PORT="$(jq_num_or '.mqtt_port' 1883)"
 MQTT_USER="$(jq -r '.mqtt_user // ""' "$OPTS")"
@@ -280,7 +309,10 @@ if [ -z "$MQTT_USER" ] || [ -z "$MQTT_PASS" ]; then
   exit 1
 fi
 
+# ============================================================
 # TIMEZONE
+# ============================================================
+
 TZ_MODE_RAW="$(jq -r '.timezone_mode // "UTC"' "$OPTS")"
 TZ_CUSTOM_RAW="$(jq -r '.timezone_custom // ""' "$OPTS")"
 
@@ -295,6 +327,7 @@ TZ_NORMALIZED="$(normalize_timezone "$TZ_REQUESTED")"
 ADDON_TIMEZONE="$(validate_timezone_or_fallback "$TZ_NORMALIZED")"
 
 TIMEZONE_VALID="true"
+
 if [ "$ADDON_TIMEZONE" != "$TZ_NORMALIZED" ]; then
   TIMEZONE_VALID="false"
 fi
@@ -305,7 +338,10 @@ export ADDON_TIMEZONE_REQUESTED="$TZ_REQUESTED"
 export ADDON_TIMEZONE_NORMALIZED="$TZ_NORMALIZED"
 export ADDON_TIMEZONE_VALID="$TIMEZONE_VALID"
 
+# ============================================================
 # EXPORT ALL
+# ============================================================
+
 export CURRENCY CONTRACT_TYPE MONTHLY_SUBSCRIPTION_PRICE FIXED_IMPORT_PRICE FIXED_EXPORT_PRICE
 export TARIFF_1_NAME TARIFF_1_PRICE TARIFF_1_START TARIFF_1_END
 export TARIFF_2_NAME TARIFF_2_PRICE TARIFF_2_START TARIFF_2_END
@@ -320,7 +356,10 @@ export GRID_ENABLED GRID_INPUT_MODE GRID_IMPORT_ENERGY_ENTITY GRID_EXPORT_ENERGY
 export MQTT_HOST MQTT_PORT MQTT_USER MQTT_PASS
 export NODE_PATH SEND_BIP
 
+# ============================================================
 # BASIC VALIDATION
+# ============================================================
+
 if [ "$SOLAR_ENABLED" = "true" ] && [ "$SOLAR_INPUT_MODE" = "energy" ] && [ -z "$SOLAR_ENERGY_ENTITY" ]; then
   loge "solar_energy_entity vide."
   exit 1
@@ -348,23 +387,40 @@ if [ "$CONTRACT_TYPE" = "tempo" ] && [ -z "$TEMPO_COLOR_ENTITY" ]; then
   exit 1
 fi
 
+# ============================================================
 # STORAGE
+# ============================================================
+
 mkdir -p "$DASHBOARDS_DIR"
 mkdir -p "$ADDON_DATA_DIR"
 
 # Install runtime deps before Node-RED starts
 ensure_runtime_ws
 
-# FLOWS
+# ============================================================
+# FLOWS + VERSION
+# ============================================================
+
 ADDON_FLOWS_VERSION="$(cat /addon/flows_version.txt 2>/dev/null || echo '0.0.0')"
 INSTALLED_VERSION="$(cat /data/flows_version.txt 2>/dev/null || echo '')"
+
+# Expose la version actuelle de Smart Energy Finance à Node-RED.
+# Le flow peut la lire avec :
+# env.get("SMART_ENERGY_FINANCE_VERSION")
+SMART_ENERGY_FINANCE_VERSION="$ADDON_FLOWS_VERSION"
+export SMART_ENERGY_FINANCE_VERSION
+
+logi "Smart Energy Finance version: $SMART_ENERGY_FINANCE_VERSION"
 
 if [ ! -f /data/flows.json ] || [ "$INSTALLED_VERSION" != "$ADDON_FLOWS_VERSION" ]; then
   cp /addon/flows.json /data/flows.json
   echo "$ADDON_FLOWS_VERSION" > /data/flows_version.txt
 fi
 
+# ============================================================
 # MQTT PATCH
+# ============================================================
+
 if ! jq -e '.[] | select(.type=="mqtt-broker" and .name=="HA MQTT Broker")' /data/flows.json >/dev/null 2>&1; then
   loge 'Aucun mqtt-broker nommé "HA MQTT Broker" trouvé dans flows.json'
   exit 1
@@ -386,6 +442,7 @@ jq \
 rm -f /data/flows_cred.json || true
 
 BROKER_ID="$(jq -r '.[] | select(.type=="mqtt-broker" and .name=="HA MQTT Broker") | .id' /data/flows.json)"
+
 if [ -z "$BROKER_ID" ]; then
   loge "Impossible de récupérer l'ID du broker MQTT"
   exit 1
@@ -399,4 +456,5 @@ jq -n \
   > /data/flows_cred.json
 
 logi "Starting Node-RED sur le port 1894..."
+
 exec node-red --userDir /data --settings /addon/settings.js
