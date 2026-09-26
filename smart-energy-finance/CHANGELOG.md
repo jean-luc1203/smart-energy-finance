@@ -1,3 +1,8 @@
+### **Changelog 0.3.0**
+
+* Bug fixe
+
+
 ### **Changelog 0.2.9**
 
 * Bug fixe
