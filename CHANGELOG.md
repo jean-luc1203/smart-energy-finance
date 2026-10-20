@@ -1,3 +1,77 @@
+# Smart Energy Finance — v0.3.1
+
+## 🚀 Major Update — Premium Custom Consumption Tracking
+
+Version 0.3.1 introduces a new Premium consumption monitoring system, allowing users to track the energy usage and estimated electricity costs of individual devices directly from Home Assistant.
+
+### ⚡ New — Custom Consumption Monitoring
+
+- New dedicated **Consumption** dashboard section.
+- Add and configure multiple devices directly from the HTML dashboard.
+- Compatible with electric vehicles, appliances, heating systems, pool equipment and other electrical devices.
+- Supports Home Assistant energy counters (Wh/kWh) and power sensors (W/kW).
+- Automatic sensor unit detection.
+- Automatic energy integration based on actual elapsed time for power sensors.
+- Daily, monthly and yearly energy consumption tracking.
+- Estimated electricity cost calculations using the configured electricity tariff.
+- Compatible with fixed-price, time-based and EDF Tempo contracts.
+- Independent consumption tracking without modifying existing Finance calculations.
+
+### 🎨 Dashboard Improvements
+
+- New device configuration interface.
+- 92 icons organized into 9 categories.
+- Improved icon selection and navigation.
+- Interactive consumption charts and detailed device information.
+- Clearer cost information and explanations.
+- Improved responsive interface for desktop, tablet and mobile.
+- French and English support.
+
+### 📁 Device Organization & Data Management
+
+- New device grouping options for better organization.
+- Dedicated configuration persistence for custom consumption monitoring.
+- Backup and restore functionality for custom consumption settings.
+- Improved separation between custom device data and core Finance data.
+
+### 🛠️ Improvements & Fixes
+
+- Removed manual sensor unit selection.
+- Removed unnecessary fixed integration interval settings.
+- Improved handling of unavailable sensor values.
+- Improved cumulative energy counter handling.
+- Existing cumulative sensor values are not counted as new consumption when monitoring starts.
+- Fixed icon selector closing unexpectedly during dashboard updates.
+- Reduced unnecessary configuration interface rebuilds.
+- Improved stability when updating device settings.
+- Preserved compatibility with existing Finance functions.
+
+### ℹ️ Important Information
+
+Custom consumption costs are estimates based on the configured electricity tariff.
+
+For systems using solar panels and battery storage, these calculations do not necessarily represent the actual amount billed by the electricity provider.
+
+The monitoring system does not automatically distinguish between grid electricity, solar production and battery energy.
+
+### 🔒 Premium Features
+
+Custom consumption monitoring and its advanced dashboard features are available to Premium users.
+
+Existing standard Finance features remain unchanged.
+
+### 🌍 Compatibility
+
+- Home Assistant
+- Node-RED
+- Smart Energy Finance Premium HTML Dashboard
+- Desktop, tablet and mobile devices
+- French and English interfaces
+
+---
+
+**Smart Energy Finance v0.3.1 — More flexibility, better device monitoring and improved energy cost visibility.**
+
 ### **Changelog 0.2.8**
 
 * Bug fixe to history 
