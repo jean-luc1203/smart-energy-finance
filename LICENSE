@@ -1,0 +1,197 @@
+SMART ENERGY FINANCE
+PERSONAL USE AND RESTRICTED REDISTRIBUTION LICENSE
+
+License version: 1.0
+First applicable software release: Smart Energy Finance 0.3.1
+
+Copyright (c) 2026 John Brossard (Tapion69).
+All rights reserved except as expressly granted below.
+
+Official repository:
+https://github.com/jean-luc1203/smart-energy-finance
+
+
+1. COPYRIGHT HOLDER AND REPOSITORY HOSTING
+
+John Brossard (Tapion69) is the copyright holder and licensor of the original Smart Energy Finance material covered by this license (“Licensor”).
+
+The official repository is hosted under the GitHub account “jean-luc1203”. Hosting, publishing or administering this repository does not, by itself, transfer copyright or ownership of the Software to the account holder.
+
+Only the Licensor, or a representative expressly authorized by the Licensor, may grant additional rights concerning the Licensor’s material.
+
+
+2. SCOPE AND EFFECTIVE RELEASE
+
+This license covers the original Smart Energy Finance software, Node-RED flows, dashboards, scripts and documentation expressly distributed under this license, collectively the “Software”.
+
+This license first applies to Smart Energy Finance version 0.3.1 and to subsequent releases expressly distributed under it.
+
+It applies only to material for which the Licensor holds the necessary rights. Third-party material and material previously distributed under another license remain subject to Sections 7 and 8.
+
+This is a proprietary, source-available license. It is not an open-source license.
+
+Public access to the source code does not grant permissions beyond those expressly provided by this license, applicable platform terms, other applicable licenses or mandatory law.
+
+
+3. PERMITTED PERSONAL USE
+
+Subject to this license, the Licensor grants you a worldwide, non-exclusive, royalty-free license to:
+
+(a) download, install and run the non-Premium features of the Software for your own private, non-commercial use, including within your household and on your personal equipment;
+
+(b) make copies reasonably necessary for installation, maintenance, migration and personal backup;
+
+(c) inspect and modify the source code to adapt the Software to your own permitted personal use, subject to Section 5 concerning Premium features;
+
+(d) share links to the official repository; and
+
+(e) publish reviews, tutorials and screenshots of the Software, including in monetized publications, provided they do not distribute substantial portions of its source code, disclose activation keys or credentials, or falsely imply official endorsement.
+
+Premium features require the separate entitlement described in Section 5.
+
+These permissions do not authorize redistribution of the Software or modified versions, except as expressly permitted in this license or by applicable law.
+
+
+4. RESTRICTED REDISTRIBUTION AND COMMERCIAL EXPLOITATION
+
+Without prior written permission from the Licensor, you may not:
+
+(a) publish, upload, mirror, distribute, sublicense, sell, rent or otherwise supply copies of the Software, or substantial portions of it, to third parties, whether unchanged or modified;
+
+(b) redistribute the Software under another name or as part of another add-on, application, repository, software package or product;
+
+(c) incorporate the Software, or substantial portions of it, into a product or service supplied to third parties;
+
+(d) use the Software to provide a paid hosted service, managed service or commercial installation offering; or
+
+(e) use the Software for internal business or other commercial purposes, except for the publications expressly permitted in Section 3(e).
+
+These restrictions apply to protected material belonging to the Licensor and to derivative works incorporating that material. They do not claim ownership of independently created code, general ideas, methods or knowledge.
+
+Commercial use and redistribution may be authorized through a separate written agreement.
+
+The official repository and distribution channels expressly authorized by the Licensor may distribute the Software within the scope of that authorization. Such authorization does not transfer ownership or grant recipients additional redistribution rights.
+
+
+5. PREMIUM FEATURES AND ACTIVATION
+
+This license does not, by itself, grant access to Premium features.
+
+Premium features require an entitlement issued or authorized by the Licensor and are subject to the terms disclosed when that entitlement is obtained.
+
+Except where applicable law grants rights that cannot be excluded, you may not:
+
+(a) forge or generate unauthorized activation keys;
+
+(b) share, sell or transfer activation keys contrary to the terms of the applicable entitlement;
+
+(c) use an entitlement outside its authorized scope; or
+
+(d) modify or distribute the Software for the purpose of obtaining Premium functionality without the required entitlement.
+
+The duration, installation limits and transfer conditions of a Premium entitlement must be specified separately. This license does not impose an unstated subscription, expiration date or installation limit.
+
+Nothing in this license reduces rights expressly granted by an existing Premium agreement or mandatory consumer law.
+
+
+6. GITHUB PLATFORM RIGHTS AND CONTRIBUTIONS
+
+Where the Licensor authorizes publication of the Software in a public GitHub repository, the permissions to view and fork that repository granted under the applicable GitHub Terms of Service are preserved.
+
+Those platform permissions do not independently authorize commercial exploitation, redistribution outside their scope or other uses prohibited by this license.
+
+You may submit proposed changes to the official repository through issues or pull requests.
+
+Unless different terms are expressly agreed before incorporation, by intentionally submitting a contribution for inclusion in the Software, you grant the Licensor a worldwide, non-exclusive, royalty-free permission to review, reproduce, modify, incorporate and distribute that contribution as part of the Software under this license, including in the official free and Premium editions.
+
+You retain ownership of your original contribution. Submission does not transfer copyright.
+
+You must have the rights necessary to submit a contribution and must identify any third-party material and its applicable license. Contributions do not expand the rights granted to recipients of the Software.
+
+
+7. THIRD-PARTY MATERIAL AND MANDATORY RIGHTS
+
+Third-party software, libraries, dependencies and other separately licensed material remain subject to their respective licenses.
+
+Nothing in this license replaces, overrides or restricts permissions granted by those licenses. Required third-party notices must be retained.
+
+Nothing in this license limits rights that cannot lawfully be excluded or restricted, including applicable rights concerning software backup, observation, study, testing, interoperability and other statutory exceptions.
+
+
+8. PREVIOUS RELEASES AND MIT-LICENSED MATERIAL
+
+Releases and portions of the Software previously distributed under the MIT License remain available under the permissions granted for those copies or portions.
+
+This license does not retroactively revoke, replace or restrict rights already granted under the MIT License or another applicable license.
+
+In particular, incorporating previously MIT-licensed material into Smart Energy Finance version 0.3.1 or a later release does not remove the permissions already granted for that material.
+
+The restrictions in this license apply to the Licensor’s original material expressly released under this license to the extent that the relevant use is not already authorized by a separate applicable license.
+
+Existing MIT copyright and permission notices must be retained where required. Release documentation must identify the transition beginning with version 0.3.1 without suggesting that previously granted MIT rights have been withdrawn.
+
+
+9. ATTRIBUTION AND PROJECT IDENTITY
+
+You must retain applicable copyright notices, license notices and attribution statements in copies you are permitted to make or distribute.
+
+You may not falsely claim authorship of the Software or present a modified version as an official release endorsed by the Licensor.
+
+No trademark rights are granted, except the limited use of project names necessary for accurate identification, attribution, reviews, tutorials and references to the Software.
+
+The fact that the official repository is hosted under “jean-luc1203” must not be represented as transferring ownership of the Licensor’s work.
+
+
+10. USER DATA
+
+You retain all rights you hold in your consumption records, financial history, configuration and other user data.
+
+This license does not restrict your ability to access, export, back up or migrate your own data.
+
+An export consisting of user data is not redistribution of the Software merely because the Software generated it. Any included copies of protected source code remain subject to their applicable license.
+
+
+11. WARRANTY AND LIABILITY
+
+To the fullest extent permitted by applicable law, the Software is provided “as is” and “as available”, without warranties of any kind.
+
+Energy and financial figures depend on configured sensors, tariffs and other inputs. They are informational estimates and do not guarantee billing accuracy, savings or financial results.
+
+Unless separately agreed, this license does not create an obligation to provide support, maintenance, updates or compatibility with future versions of third-party systems.
+
+To the fullest extent permitted by applicable law, the Licensor is not liable for losses or damages arising from use of, or inability to use, the Software.
+
+Nothing in this section excludes or limits liability, guarantees, contractual commitments or remedies that cannot lawfully be excluded or limited, including mandatory consumer protections.
+
+
+12. BREACH AND TERMINATION
+
+If you materially breach this license, the Licensor may give you written notice identifying the breach and requiring it to be remedied.
+
+If the breach is not remedied within 30 days after receipt of that notice, the Licensor may terminate the permissions granted to you under this license by written notice.
+
+Termination does not affect rights arising under mandatory law, third-party licenses, earlier MIT grants or separate agreements that remain applicable.
+
+Following termination, you must stop activities that relied solely on the terminated permissions. You may retrieve and retain your own data and keep copies required by law.
+
+Termination does not prevent either party from pursuing remedies available under applicable law.
+
+
+13. APPLICABLE LAW
+
+This license is governed by French law, without depriving consumers of mandatory protections applicable in their country of habitual residence.
+
+Jurisdiction is determined by applicable law. This license does not impose an exclusive forum on consumers contrary to mandatory legal protections.
+
+If a provision is unenforceable, the remaining provisions continue to apply to the extent permitted by law.
+
+
+14. ADDITIONAL PERMISSIONS AND LICENSE CHANGES
+
+Requests for commercial use, redistribution or other permissions may be submitted through the official repository or the developer’s contact channels listed there.
+
+Additional permission must be expressly granted in writing by John Brossard (Tapion69), or by a representative expressly authorized to grant that permission. Silence does not constitute permission.
+
+The repository account holder is not automatically authorized to grant additional rights merely because they host or administer the repository.
+
+A later revision of this license does not, by itself, replace the terms already granted for a copy obtained under this version.
